@@ -10,6 +10,10 @@ headers = {
     "Content-Type": "application/json",
     "Cookie": "token=LdeOqPFByfVHXYRcTqdmowtNLCxediADEHZFBibXkaZcHYHtMrYKFEPndUUEyPFTajezjuHTHeStDeabkwbMUoLKzpCFmhmZSIFKvvwWiWHSFdNfoRVKbWuIVTLikIdR; __stripe_mid=06f6506e-e1bc-41c6-88f9-a8b3802c925085fa8e; hf-chat=8881bae7-9647-4cf3-8f8a-59de9f530c82; aws-waf-token=c27f90fe-f8c3-4742-90c7-68e483c93599:DgoAdG6NUVMZAAAA:r3I9urfTNs3M0F/LjKVi3zAL+W3UZ75yLE9SiEnPGsQYZP0qzmo+WNCDXxIacFoPHw5nNHpjZ4dQST/YIFy7vKeVv/fYbrruLJXXYULp2eIxZjmMqmQWZBBqEulrGWvuKpBWymHxyVlJxw6lysVg5ef1amEXPJzaVwdaRiYsNipGTPdiokAbL9k1wunKnirpX3cg3QN9LFeejYP/ZYbiaIciKlxtmnZ+Dlqd5/lh7Uw4jobTLNBRMRN67qZZyooQhmQbW4E="  # Replace with your actual cookie
 }
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+
 
 @app.route('/chat', methods=['POST'])
 def chat():
